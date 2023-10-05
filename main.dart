@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(Myapp());
 }
 
-class MyApp extends StatelessWidget {
+class Myapp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Center(
-        child: Text('ABDULLAH ADAM'),
-      ),
-    );
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text("adamApp"),
+          ),
+          body: Center(
+            child: Text("hallo"),
+          ),
+        ));
   }
 }
