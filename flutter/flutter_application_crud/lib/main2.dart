@@ -53,7 +53,11 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           // Example: Creating a new post
-          Mahasiswa newPost = Mahasiswa(id: 0, nama: 'Dodi', email: 'dedi@gmail.com', tgllahir: '1979-01-01');
+          Mahasiswa newPost = Mahasiswa(
+              id: 0,
+              nama: 'Dodi',
+              email: 'dedi@gmail.com',
+              tgllahir: '1979-01-01');
           Mahasiswa createdPost = await _apiService.createMahasiswa(newPost);
 
           // Refresh the UI after CRUD operations
